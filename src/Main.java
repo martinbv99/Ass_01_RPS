@@ -28,13 +28,9 @@ public class Main
                {
                 System.out.println("Rock breaks Scissors, Player 1 wins!");
                }
-            else
-               {
-                   System.out.println("Invalid move! Try again! ");
-               }
         }
 
-        if (play1.equalsIgnoreCase("P"))
+        else if (play1.equalsIgnoreCase("P"))
         {
             if (play2.equalsIgnoreCase("R"))
                {
@@ -48,33 +44,23 @@ public class Main
                {
                    System.out.println("Scissors cuts Paper, Player 2 wins!");
                }
-            else
-               {
-                   System.out.println("Invalid move! Try again!");
-               }
+
         }
 
-        if (play1.equalsIgnoreCase("S"))
+        else if (play1.equalsIgnoreCase("S"))
         {
-            if (play2.equalsIgnoreCase("R"))
-               {
-                   System.out.println("Rock breaks Scissors, Player 2 wins! ");
-               }
-            else if (play2.equalsIgnoreCase("P"))
-               {
-                   System.out.println("Scissors cuts Paper, Player 1 wins! ");
-               }
-            else if (play2.equalsIgnoreCase("S"))
-               {
-                   System.out.println("Scissors vs Scissors, It's a tie! ");
-               }
-            else
-               {
-                   System.out.println("Invalid move! Try again!");
-               }
-
+            if (play2.equalsIgnoreCase("R")) {
+                System.out.println("Rock breaks Scissors, Player 2 wins! ");
+            } else if (play2.equalsIgnoreCase("P")) {
+                System.out.println("Scissors cuts Paper, Player 1 wins! ");
+            } else if (play2.equalsIgnoreCase("S")) {
+                System.out.println("Scissors vs Scissors, It's a tie! ");
+            }
         }
-
+        else
+        {
+            System.out.println("Invalid move! Stop pranking the program!");
+        }
 
     }
 }
